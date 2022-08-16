@@ -1,0 +1,9 @@
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
