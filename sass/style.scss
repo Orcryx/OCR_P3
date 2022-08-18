@@ -13,10 +13,12 @@
 body
 {
     width: 100%;
+    
 }
 a 
 {
     text-decoration: none;
+    color: black;
 }
 p{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -27,14 +29,19 @@ h1{
     line-height:0.9em;
     margin: 25px 0 15px 0;
 }
+// h2
+// {
+//     margin: 0 0 20px 0;
+// }
+
 /************************
 HEADER
 ************************/
 header
 {
-width: 100%;
-display: flex;
-flex-direction:  column;
+    width: 100%;
+    display: flex;
+    flex-direction:  column;
 }
 
 #banniere{
@@ -59,6 +66,10 @@ flex-direction:  column;
    & .fa-location-dot {
     margin-right: 10px ; 
    } 
+   &:hover
+    {
+        cursor: pointer;
+    }
 }
 #presentation
 {
@@ -84,20 +95,84 @@ flex-direction:  column;
     }
 }
 .action
-{
-padding: 15px;
-border-radius: 25px;
-color: #ffff;
-font-weight: bold;
-border: none;
-background: linear-gradient($secondaire, $primaire);
+    {
+    padding: 15px;
+    border-radius: 25px;
+    color: #ffff;
+    font-weight: bold;
+    border: none;
+    background: linear-gradient($secondaire, $primaire);
+    &:hover
+    {
+        cursor: pointer;
+    }
 }
 /************************
 MAIN
 ************************/
 main 
 {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px;
+    // border: 1px sienna solid;
+}
+
+.conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    margin: 10px 0 40px 0;
+    padding-left:10px ;
+    width: 100%;
+    // border: 1px plum solid;
+}
+
+.etape 
+{
+    width: 100%;
+    max-width: 300px;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+    background-color: $fond2;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0,0.2);
+    &:hover
+    {
+        background-color: #F5edff;
+        cursor: pointer;
+    }
+    & .alignement
+    {
+        display: flex;
+        position : absolute;
+        width: 90%;
+        left: -10px ;
+        top : 35%;
+        color: black;
+        font-weight: bold;
+        & .fa-solid
+        {
+            padding: 2% 2% 1% 2%;
+            margin-right: 5%;
+            font-size: 0.7em;
+            color: #ffff;
+            background-color: $primaire;
+            border: 1px $primaire solid;
+            border-radius: 100%;
+        }
+        & .fa-icone
+        {
+            color: $primaire;
+            font-size: 1em;
+            background: transparent;
+            border: none;
+        }
+    }
+ 
 }
 /************************
 FOOTER

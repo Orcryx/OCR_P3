@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 p {
@@ -56,6 +57,9 @@ header {
 #localisation .fa-location-dot {
   margin-right: 10px;
 }
+#localisation:hover {
+  cursor: pointer;
+}
 
 #presentation {
   background-color: #f6f6f6;
@@ -84,12 +88,67 @@ header {
   border: none;
   background: linear-gradient(#FF79DA, #9356DC);
 }
+.action:hover {
+  cursor: pointer;
+}
 
 /************************
 MAIN
 ************************/
 main {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: center;
+  margin: 10px 0 40px 0;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.etape {
+  width: 100%;
+  max-width: 300px;
+  height: 70px;
+  margin-top: 10px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #f6f6f6;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.etape:hover {
+  background-color: #F5edff;
+  cursor: pointer;
+}
+.etape .alignement {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  left: -10px;
+  top: 35%;
+  color: black;
+  font-weight: bold;
+}
+.etape .alignement .fa-solid {
+  padding: 2% 2% 1% 2%;
+  margin-right: 5%;
+  font-size: 0.7em;
+  color: white;
+  background-color: #9356DC;
+  border: 1px #9356DC solid;
+  border-radius: 100%;
+}
+.etape .alignement .fa-icone {
+  color: #9356DC;
+  font-size: 1em;
+  background: transparent;
+  border: none;
 }
 
 /************************
