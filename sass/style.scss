@@ -10,11 +10,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body
-{
-    width: 100%;
-    
-}
+// body
+// {
+//     width: 100%; 
+// }
 a 
 {
     text-decoration: none;
@@ -101,10 +100,12 @@ header
     color: #ffff;
     font-weight: bold;
     border: none;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0,0.2);
     background: linear-gradient($secondaire, $primaire);
     &:hover
     {
         cursor: pointer;
+        box-shadow: 3px 5px 8px rgba(0, 0, 0,0.2); 
     }
 }
 /************************
@@ -112,22 +113,25 @@ MAIN
 ************************/
 main 
 {
+
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    padding: 10px;
-    // border: 1px sienna solid;
+    & h2
+    {
+        margin-left: 30px;
+    }
 }
 
+/* section fonctionnement*/
 .conteneur {
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
     justify-content: center;
     margin: 10px 0 40px 0;
-    padding-left:10px ;
+    padding:0 10px 0 15px ;
     width: 100%;
-    // border: 1px plum solid;
 }
 
 .etape 
@@ -144,6 +148,7 @@ main
     {
         background-color: #F5edff;
         cursor: pointer;
+        box-shadow: 3px 5px 8px rgba(0, 0, 0,0.2); 
     }
     & .alignement
     {
@@ -171,15 +176,102 @@ main
             background: transparent;
             border: none;
         }
+    
     }
  
 }
+/* section restaurant*/
+#restaurants
+{
+    width: 100%;
+    padding-top: 30px;
+    background-color: $fond2;
+}
+.carte
+{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #ffff;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0,0.2);
+    & img
+    {
+        width: 100%;
+        min-width: 225px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    & .nouveau
+    {
+        color: darken($tertiaire, 40%);
+        font-size: 0.8em;
+        font-weight: bold;
+        background: $tertiaire;
+        padding: 2%;
+        border-radius: 2px;
+        right: 10px;
+        top : 10px;
+        position: absolute;
+    }
+    & .infoResto
+    {
+        margin: 5px 0 10px 0;
+    }
+    &:hover
+    {
+        box-shadow: 3px 5px 8px rgba(0, 0, 0,0.2);   
+    } 
+}
+.inforCarteResto
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 10px;
+    & .fa-regular
+   {
+      position: absolute;   
+      right: 15px;
+      top: 15px;
+    //   &:hover
+    //   {
+    //     background: linear-gradient($secondaire, $primaire);
+       
+    //   }
+    } 
+  
+}
+
 /************************
 FOOTER
 ************************/
 footer
 {
+    width: 100%;
+    padding: 20px 0 20px 10px;
+    background-color: #353535;
+  
+}
+nav
+{
     display: flex;
     flex-direction: column;
-    display: none;
+    & a, h3
+    {
+        color: #ffff;
+    }
+    & h3
+    {
+        margin-bottom: 15px;
+    }
+    & a 
+    {
+        line-height: 1.5em;
+    }
+    & i
+    {
+        font-size: 0.7em;
+    }
 }
