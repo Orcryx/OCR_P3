@@ -176,13 +176,14 @@ main h2 {
   width: 100%;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .carte img {
   width: 100%;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
