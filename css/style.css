@@ -109,11 +109,17 @@ main h2 {
 .conteneur {
   display: flex;
   flex-wrap: wrap;
-  gap: 5%;
   justify-content: center;
+  gap: 3%;
   margin: 10px 0 40px 0;
   padding: 0 10px 0 15px;
   width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .conteneur.type2 {
+    flex-wrap: nowrap;
+    gap: 2%;
+  }
 }
 
 .etape {
@@ -144,7 +150,7 @@ main h2 {
 .etape .alignement .fa-solid {
   padding: 7px 9px 3px 9px;
   margin-right: 5%;
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: white;
   background-color: #9356DC;
   border: 1px #9356DC solid;
@@ -161,7 +167,7 @@ main h2 {
 }
 @media screen and (min-width: 1000px) {
   .etape {
-    max-width: 280px;
+    max-width: 300px;
   }
 }
 
@@ -204,7 +210,6 @@ main h2 {
 .carte:hover {
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
 }
-
 .inforCarteResto {
   display: flex;
   justify-content: space-between;
