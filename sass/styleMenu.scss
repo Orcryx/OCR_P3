@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -26,9 +27,8 @@ h2
 {
     font-size: 0.8em;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: #353535;
-    text-decoration:  2px $tertiaire underline;
 }
 h3
 {
@@ -111,6 +111,7 @@ section
         }
     }
 }
+
  #carteMenu
  {
     display: flex;
@@ -119,6 +120,14 @@ section
     margin-top : 20px;
     padding: 10px;
     // border:  1px pink solid;
+    & .underline
+    {
+        background-color: $tertiaire;
+        height: 2px;
+        width: 34px;
+        margin-bottom: 20px;
+    }
+
  }
 .moment 
 {
