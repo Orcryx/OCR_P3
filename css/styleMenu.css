@@ -121,7 +121,7 @@ section {
     margin: 8% 10% 0 10%;
     background-color: #f6f6f6;
     border-radius: 25px 25px 0 0;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2), 2px 1px 1px rgba(0, 0, 0, 0.2);
   }
 }
 #menu #bouton {
