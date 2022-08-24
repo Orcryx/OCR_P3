@@ -128,6 +128,8 @@ section {
 .nourriture .description {
   display: flex;
   justify-content: space-between;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
   font-size: 0.9em;
 }
 .nourriture .description .prix {

@@ -22,6 +22,10 @@ h1 {
   margin: 25px 0 15px 0;
 }
 
+h2 {
+  margin: 0 0 20px 0;
+}
+
 /************************
 HEADER
 ************************/
@@ -70,7 +74,6 @@ header {
 }
 #presentation p {
   color: gray;
-  margin-bottom: 10px;
 }
 #presentation .action {
   margin: 15px 0 30px 0;
@@ -115,7 +118,8 @@ main h2 {
 
 .etape {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
+  min-width: 250px;
   height: 70px;
   margin-top: 10px;
   border-radius: 20px;
@@ -138,7 +142,7 @@ main h2 {
   font-weight: bold;
 }
 .etape .alignement .fa-solid {
-  padding: 2% 2% 1% 2%;
+  padding: 7px 9px 3px 9px;
   margin-right: 5%;
   font-size: 0.7em;
   color: white;
@@ -148,9 +152,17 @@ main h2 {
 }
 .etape .alignement .fa-icone {
   color: #9356DC;
-  font-size: 1em;
+  font-size: 1.1em;
   background: transparent;
   border: none;
+}
+.etape .alignement p {
+  margin-top: 7px;
+}
+@media screen and (min-width: 1000px) {
+  .etape {
+    max-width: 280px;
+  }
 }
 
 /* section restaurant*/
@@ -163,15 +175,14 @@ main h2 {
 .carte {
   width: 100%;
   position: relative;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .carte img {
   width: 100%;
-  min-width: 225px;
-  height: 150px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
