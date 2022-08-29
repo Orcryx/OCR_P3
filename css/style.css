@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
@@ -233,6 +234,7 @@ main h2 {
   margin-left: 10px;
 }
 
+/*Gérer les icones coeurs + les transitions pour l'échange des icones*/
 .coeurs .fa-heart {
   right: 15px;
   top: 15px;
