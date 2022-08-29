@@ -251,37 +251,37 @@ main
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-left: 10px;
-    & .coeurs
-    {
-        & .fa-heart
-        { 
-            right: 15px;
-            top: 15px;
-            position: absolute;  
-            transition: opacity 0.1s linear;
-        } 
-        & .fa-regular
-        {
-            background-color: #fff;
-          &:hover
-          {
-            opacity: 0;
-          }
-        }
-        & .fa-solid /*fa-solid : le coeur avec une couleur radiante*/
-        {
-
-            color: $primaire;
-            background:linear-gradient($secondaire, $primaire);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-           
-        }
-       
-    }
+    margin-left: 10px; 
 }
 
+.coeurs
+{
+    & .fa-heart
+    { 
+        right: 15px;
+        top: 15px;
+        position: absolute;  
+        transition: opacity 0.1s linear;
+    } 
+    & .fa-regular
+    {
+        background-color: #fff;
+      &:hover
+      {
+        opacity: 0;
+      }
+    }
+    & .fa-solid /*fa-solid : le coeur avec une couleur radiante*/
+    {
+
+        color: $primaire;
+        background:linear-gradient($secondaire, $primaire);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+       
+    }
+   
+}
 /************************
 FOOTER
 ************************/
