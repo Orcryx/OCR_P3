@@ -232,10 +232,23 @@ main h2 {
   position: relative;
   margin-left: 10px;
 }
-.inforCarteResto .fa-regular {
-  position: absolute;
+.inforCarteResto .coeurs .fa-heart {
   right: 15px;
   top: 15px;
+  position: absolute;
+  transition: opacity 0.1s linear;
+}
+.inforCarteResto .coeurs .fa-regular {
+  background-color: #fff;
+}
+.inforCarteResto .coeurs .fa-regular:hover {
+  opacity: 0;
+}
+.inforCarteResto .coeurs .fa-solid {
+  color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /************************
