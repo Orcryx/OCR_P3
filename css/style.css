@@ -232,6 +232,8 @@ main h2 {
 }
 .etape .alignement {
   display: flex;
+  gap: 4%;
+  align-items: baseline;
   position: absolute;
   width: 90%;
   left: -10px;
@@ -239,23 +241,21 @@ main h2 {
   color: black;
   font-weight: bold;
 }
-.etape .alignement .fa-solid {
-  padding: 7px 9px 3px 9px;
-  margin-right: 5%;
-  font-size: 0.8em;
-  color: white;
-  background-color: #9356DC;
+.etape .alignement .numero {
+  font-size: 0.7em;
+  color: #fff;
   border: 1px #9356DC solid;
-  border-radius: 100%;
+  background-color: #9356DC;
+  padding: 5px;
+  border-radius: 50%;
 }
 .etape .alignement .fa-icone {
-  color: #9356DC;
+  color: #686666;
   font-size: 1.1em;
-  background: transparent;
-  border: none;
 }
 .etape .alignement p {
   margin-top: 7px;
+  font-size: 1em;
 }
 @media screen and (min-width: 1000px) {
   .etape {
