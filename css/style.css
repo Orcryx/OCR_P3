@@ -25,21 +25,21 @@
 /*faire glisser une div vers la gauche*/
 @-webkit-keyframes glisseGauche {
   from {
-    width: 5%;
+    width: 0px;
     opacity: 0;
   }
   to {
-    width: 20%;
+    width: 80px;
     visibility: visible;
   }
 }
 @keyframes glisseGauche {
   from {
-    width: 5%;
+    width: 0px;
     opacity: 0;
   }
   to {
-    width: 20%;
+    width: 80px;
     visibility: visible;
   }
 }
