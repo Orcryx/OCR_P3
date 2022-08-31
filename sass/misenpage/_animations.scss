@@ -1,0 +1,88 @@
+  /*faire apparaitre et glisser des div avec effet de fondu au chargement de la page*/
+@-webkit-keyframes fonduHaut {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+@keyframes fonduHaut {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  /*faire glisser une div vers la gauche*/
+@-webkit-keyframes glisseGauche {
+    from {
+      width: 5%;
+      opacity: 0;
+    }
+    to {
+      width: 20%;
+      visibility: visible;
+    }
+  }
+@keyframes glisseGauche {
+    from {
+      width: 5%;
+      opacity: 0;
+    }
+    to {
+      width: 20%;
+      visibility: visible;
+    }
+  }
+  /*Faire apparaitre les éléments du menu*/
+  @keyframes fonduHaut {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  /*faire apparaitre l'image colorer en dessous*/
+  @-webkit-keyframes colorisation {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes colorisation {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+    /*faire disparaitre l'image au dessus*/
+  @-webkit-keyframes effacer {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes effacer {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
