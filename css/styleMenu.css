@@ -297,8 +297,8 @@ MAIN
   transition: transform 0.8s ease-in-out;
 }
 .nourriture:hover > .boiteGlissante {
-  -webkit-animation: glisseGauche 2s forwards ease-in-out;
-  animation: glisseGauche 2s forwards ease-in-out;
+  -webkit-animation: glisseGauche 1.5s forwards ease-in-out;
+  animation: glisseGauche 1.5s forwards ease-in-out;
 }
 .nourriture:hover > .boiteGlissante > .fa-circle-check {
   transform: rotate(360deg);
