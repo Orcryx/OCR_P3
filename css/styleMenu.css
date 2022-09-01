@@ -112,7 +112,7 @@ h2 {
   font-size: 0.8em;
   font-weight: 400;
   margin-bottom: 5px;
-  margin-top: 3%;
+  margin-top: 5px;
   color: #353535;
 }
 
@@ -152,10 +152,6 @@ header {
 /************************
 MAIN
 ************************/
-section {
-  margin-bottom: 30px;
-}
-
 #photoTable {
   width: 100%;
   position: relative;
@@ -248,7 +244,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0 10px 10px 10px;
+  padding: 20px 10px 10px 10px;
 }
 #carteMenu .underline {
   background-color: #99E2D0;
@@ -261,14 +257,15 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px;
-  gap: 5%;
+  padding-bottom: 2%;
+  height: auto;
 }
 
 .nourriture {
   display: flex;
   width: 100%;
-  height: auto;
+  max-height: 60px;
+  margin-bottom: 10px;
   border-radius: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #fff;
