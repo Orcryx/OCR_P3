@@ -232,26 +232,33 @@ main h2 {
 }
 .etape .alignement {
   display: flex;
-  gap: 4%;
   align-items: baseline;
   position: absolute;
+  gap: 4%;
   width: 90%;
   left: -10px;
-  top: 35%;
+  top: 20px;
   color: black;
   font-weight: bold;
 }
 .etape .alignement .numero {
   font-size: 0.7em;
-  color: #fff;
+  color: white;
   border: 1px #9356DC solid;
   background-color: #9356DC;
-  padding: 5px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
+}
+.etape .alignement .numero .fa-1, .etape .alignement .numero .fa-2 {
+  padding: 3px 0 0 6px;
+}
+.etape .alignement .numero .fa-3 {
+  padding: 4px 0 0 5px;
 }
 .etape .alignement .fa-icone {
   color: #686666;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .etape .alignement p {
   margin-top: 7px;

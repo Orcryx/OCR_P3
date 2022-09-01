@@ -165,27 +165,39 @@ main
     & .alignement
     {
         display: flex;
-        gap: 4%;
-        align-items: baseline;
+        align-items:baseline;
         position : absolute;
+        gap: 4%;
         width: 90%;
         left: -10px ;
-        top : 35%;
+        top : 20px;
         color: black;
         font-weight: bold;
         & .numero
         {
            font-size: 0.7em;
-           color: #fff;;
+            color: #ffff;
            border: 1px $primaire solid;
            background-color: $primaire;
-           padding: 5px;
+           width: 21px;
+           height: 21px;
            border-radius: 50%;
+           
+            & .fa-1, .fa-2
+            {
+                padding: 3px 0 0 6px;
+            }
+            & .fa-3
+            {
+                padding: 4px 0 0 5px;
+            }
+
+
         }
         & .fa-icone
         {
             color: #686666;
-            font-size: 1.1em;
+            font-size: 1em;
         }
         & p {margin-top: 7px; font-size: 1em;}
     }
