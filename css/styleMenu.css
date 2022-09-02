@@ -368,6 +368,7 @@ MAIN
   cursor: pointer;
   -webkit-animation: fonduHaut 2s linear forwards;
   animation: fonduHaut 2s linear forwards;
+  -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
 .nourriture .description {
@@ -383,7 +384,7 @@ MAIN
 .nourriture .prix {
   font-size: 0.9em;
   font-weight: bold;
-  margin: 33px 5px 0 5px;
+  margin: 33px 20px 0 5px;
   padding: 0;
 }
 .nourriture .boiteGlissante {
@@ -401,14 +402,15 @@ MAIN
   transition: transform 0.8s ease-in-out;
 }
 .nourriture:hover > .boiteGlissante {
-  -webkit-animation: glisseGauche 1.5s forwards ease-in-out;
-  animation: glisseGauche 1.5s forwards ease-in-out;
+  -webkit-animation: glisseGauche 800ms forwards ease-in-out;
+  animation: glisseGauche 800ms forwards ease-in-out;
 }
 .nourriture:hover > .boiteGlissante > .fa-circle-check {
   transform: rotate(360deg);
-  transition-delay: 2s;
+  transition-delay: 700ms;
 }
 .nourriture:not(:hover) > .boiteGlissante {
+  -webkit-animation: glisseDroite 800ms ease-in-out;
   animation: glisseDroite 800ms ease-in-out;
 }
 .nourriture .prix {
