@@ -43,6 +43,31 @@
     visibility: visible;
   }
 }
+/*faire glisser une div vers la droite*/
+@-webkit-keyframes glisseDroite {
+  from {
+    width: 80px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    width: 0px;
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+@keyframes glisseDroite {
+  from {
+    width: 80px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    width: 0px;
+    opacity: 0;
+    visibility: collapse;
+  }
+}
 /*Faire apparaitre les éléments du menu*/
 @keyframes fonduHaut {
   0% {
@@ -103,7 +128,9 @@ LOADER
   justify-content: center;
   align-items: center;
   background-color: white;
+  -webkit-animation: pageChargement 1s forwards;
   animation: pageChargement 1s forwards;
+  -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 .chargement .rond {
@@ -115,9 +142,20 @@ LOADER
   border-left: 5px #FF79DA solid;
   /* border-image: linear-gradient(#200122,#6f0000);
    border-image-slice: 1;*/
+  -webkit-animation: rotation 800ms linear infinite;
   animation: rotation 800ms linear infinite;
 }
 
+@-webkit-keyframes pageChargement {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
 @keyframes pageChargement {
   from {
     opacity: 1;
@@ -126,6 +164,14 @@ LOADER
   to {
     opacity: 0;
     visibility: collapse;
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes rotation {

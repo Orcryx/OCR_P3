@@ -201,14 +201,15 @@ MAIN
     display: flex;
     width: 100%;
     max-height: 60px;
+    opacity: 0;
     margin-bottom: 10px;
     border-radius: 15px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0,0.2);
     background-color: #fff;
     cursor: pointer;
-	-webkit-animation: fonduHaut 2s linear;
-	        animation: fonduHaut 2s linear;
-    //animation-delay: 3s;
+	-webkit-animation: fonduHaut 2s linear forwards;
+	        animation: fonduHaut 2s linear forwards;
+            animation-delay: 3s;
     & .description
     {
         //border : 1px crimson solid;
@@ -248,6 +249,10 @@ MAIN
         transition-delay:2s;
     }
 
+    }
+    &:not(:hover) > .boiteGlissante 
+    {
+       animation: glisseDroite 800ms ease-in-out;  
     }
     & .prix
     {

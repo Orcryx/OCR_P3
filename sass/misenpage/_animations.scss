@@ -16,7 +16,7 @@
     }
     100% {
       opacity: 1;
-      transform: translateY(0px);
+      transform: translateY(0px);  
     }
   }
   /*faire glisser une div vers la gauche*/
@@ -40,6 +40,38 @@
       visibility: visible;
     }
   }
+
+  /*faire glisser une div vers la droite*/
+
+  @-webkit-keyframes glisseDroite {
+    from
+    {
+        width: 80px;
+        opacity: 1;
+        visibility: visible;
+    }
+    to
+    {
+       width: 0px;
+       opacity: 0;
+       visibility: collapse;
+    }
+    }
+
+  @keyframes glisseDroite {
+    from
+    {
+        width: 80px;
+        opacity: 1;
+        visibility: visible;
+    }
+    to
+    {
+       width: 0px;
+       opacity: 0;
+       visibility: collapse;
+    }
+    }
   /*Faire apparaitre les éléments du menu*/
   @keyframes fonduHaut {
     0% {
@@ -104,8 +136,10 @@ LOADER
     justify-content: center;
     align-items: center;
     background-color: #ffff;
-    animation: pageChargement 1s forwards;
-    animation-delay:2s ;
+    -webkit-animation: pageChargement 1s forwards;
+            animation: pageChargement 1s forwards;
+    -webkit-animation-delay:2s ;
+            animation-delay:2s ;
     & .rond
     {
         width: 100px;
@@ -116,8 +150,20 @@ LOADER
         border-left: 5px $secondaire solid;
        /* border-image: linear-gradient(#200122,#6f0000);
         border-image-slice: 1;*/
-        animation: rotation 800ms linear infinite;
+        -webkit-animation: rotation 800ms linear infinite;
+                animation: rotation 800ms linear infinite;
     }
+}
+@-webkit-keyframes pageChargement
+{
+  from{
+    opacity: 1;
+  visibility: visible;
+  }
+  to{
+    opacity: 0;
+    visibility: collapse;
+  }
 }
 @keyframes pageChargement
 {
@@ -129,6 +175,17 @@ LOADER
     opacity: 0;
     visibility: collapse;
   }
+}
+
+@-webkit-keyframes rotation 
+{
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
 }
 
 @keyframes rotation 
