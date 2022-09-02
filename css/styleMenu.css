@@ -233,14 +233,13 @@ header {
   z-index: 2;
 }
 #banniere img {
-  margin: 10% 0 5% 0;
+  margin: 10% 0 5% 5%;
 }
 #banniere .fa-arrow-left {
   position: absolute;
   left: 2%;
   font-size: 1.8em;
-  margin-right: 10%;
-  margin-top: 20px;
+  margin: 20px 20px 0 10px;
 }
 
 /************************
