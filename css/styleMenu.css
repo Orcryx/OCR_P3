@@ -348,6 +348,7 @@ MAIN
 }
 
 .moment {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -372,13 +373,20 @@ MAIN
 .nourriture .description {
   width: 100%;
   padding: 10px;
+  overflow: hidden;
 }
-.nourriture .description .prix {
-  font-size: 0.8em;
+.nourriture .description h3, .nourriture .description p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nourriture .prix {
+  font-size: 0.9em;
   font-weight: bold;
+  margin: 33px 5px 0 5px;
+  padding: 0;
 }
 .nourriture .boiteGlissante {
-  margin-left: 10px;
   background: #99E2D0;
   border: 1px #99E2D0 solid;
   border-radius: 0 15px 15px 0;
@@ -432,12 +440,6 @@ MAIN
 .action:hover {
   cursor: pointer;
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
-}
-
-.aligner {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
 }
 
 /************************
