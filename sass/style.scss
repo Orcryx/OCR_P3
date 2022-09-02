@@ -270,6 +270,8 @@ main
 /*Gérer les icones coeurs + les transitions pour l'échange des icones*/
 .coeurs
 {
+    border: none;
+    font-size: 1.1em;
     & .fa-heart
     { 
         right: 15px;

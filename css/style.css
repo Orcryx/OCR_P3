@@ -424,6 +424,10 @@ main h2 {
 }
 
 /*Gérer les icones coeurs + les transitions pour l'échange des icones*/
+.coeurs {
+  border: none;
+  font-size: 1.1em;
+}
 .coeurs .fa-heart {
   right: 15px;
   top: 15px;

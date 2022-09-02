@@ -198,10 +198,10 @@ p {
   font-size: 0.8em;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
+/*h1
+ {
+     font-size: 1.3em;
+}*/
 h2 {
   font-size: 0.8em;
   font-weight: 400;
@@ -268,16 +268,10 @@ MAIN
   bottom: 0%;
   background-color: #f6f6f6;
   border-radius: 15px 15px 0 0;
-}
-#photoTable #blocNomRestaurant .alignement {
+  font-size: 0.8em;
   display: flex;
-  justify-content: space-around;
-}
-@media screen and (min-width: 1000px) {
-  #photoTable #blocNomRestaurant .alignement {
-    margin-top: 0;
-    font-size: 1em;
-  }
+  justify-content: center;
+  gap: 30px;
 }
 @media screen and (min-width: 1000px) {
   #photoTable #blocNomRestaurant {
@@ -292,11 +286,14 @@ MAIN
 
 /*Gérer les icones coeurs + les transitions pour l'échange des icones*/
 .coeurs {
+  border: none;
+  margin-bottom: 22px;
+  margin-right: 8%;
   cursor: pointer;
 }
 .coeurs .fa-heart {
-  font-size: 1.7em;
   position: absolute;
+  font-size: 1.8em;
 }
 .coeurs .fa-solid {
   z-index: 1;
