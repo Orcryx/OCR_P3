@@ -88,6 +88,54 @@
     opacity: 0;
   }
 }
+/************************
+LOADER
+************************/
+/*Créer le loader-page de chargement*/
+.chargement {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation: pageChargement 1s forwards;
+  animation-delay: 2s;
+}
+.chargement .rond {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 5px rgba(147, 86, 220, 0.2) solid;
+  border-left: 5px #FF79DA solid;
+  /* border-image: linear-gradient(#200122,#6f0000);
+   border-image-slice: 1;*/
+  animation: rotation 800ms linear infinite;
+}
+
+@keyframes pageChargement {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
