@@ -97,22 +97,22 @@
   }
 }
 /*faire disparaitre l'image au dessus*/
-@-webkit-keyframes effacer {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes effacer {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/* @-webkit-keyframes effacer {
+   0% {
+     opacity: 1;
+   }
+   100% {
+     opacity: 0;
+   }
+ }
+ @keyframes effacer {
+   0% {
+     opacity: 1;
+   }
+   100% {
+     opacity: 0;
+   }
+ }*/
 /************************
 LOADER
 ************************/
@@ -449,10 +449,7 @@ main h2 {
   animation: colorisation 800ms forwards linear;
 }
 .coeurs:hover > .fa-regular {
-  -webkit-animation: effacer 800ms forwards linear;
-  animation: effacer 800ms forwards linear;
-  -webkit-animation-delay: 300ms;
-  animation-delay: 300ms;
+  opacity: 0;
 }
 
 /************************

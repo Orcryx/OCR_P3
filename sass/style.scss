@@ -299,10 +299,7 @@ main
    }
    &:hover > .fa-regular
    {
-    -webkit-animation: effacer 800ms forwards linear;
-            animation: effacer 800ms forwards linear;
-    -webkit-animation-delay: 300ms;
-            animation-delay: 300ms;
+     opacity: 0;
    }
 }
 /************************
