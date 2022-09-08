@@ -82,37 +82,22 @@
 /*faire apparaitre l'image colorer en dessous*/
 @-webkit-keyframes colorisation {
   0% {
-    opacity: 0.1;
+    opacity: 1;
+    transform: scale(0.1);
   }
   100% {
-    opacity: 1;
+    transform: scale(1);
   }
 }
 @keyframes colorisation {
   0% {
-    opacity: 0.1;
+    transform: scale(0.1);
   }
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
-/*faire disparaitre l'image au dessus*/
-/* @-webkit-keyframes effacer {
-   0% {
-     opacity: 1;
-   }
-   100% {
-     opacity: 0;
-   }
- }
- @keyframes effacer {
-   0% {
-     opacity: 1;
-   }
-   100% {
-     opacity: 0;
-   }
- }*/
 /************************
 LOADER
 ************************/
@@ -361,8 +346,8 @@ MAIN
   cursor: pointer;
   -webkit-animation: fonduHaut 2s linear forwards;
   animation: fonduHaut 2s linear forwards;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 .nourriture .description {
   width: 100%;
