@@ -1,29 +1,18 @@
+
 @import "./utils/variables";
 @import "./utils/fonctions";
 @import "./utils/mixins";
 @import "./utils/extensions";
-@import "./misenpage/animations";
+@import "./base/fondations";
+@import "./misenpage/header";
+@import "./misenpage/footer";
+@import "./composants/animations";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-// body
-// {
-//     width: 100%; 
-// }
-a 
-{
-    text-decoration: none;
-    color: black;
-}
-p{
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-}
+/************************
+BODY/HTML
+************************/
 h1{
     font-size: 1.8em;
     line-height:0.9em;
@@ -38,13 +27,6 @@ h1{
 /************************
 HEADER
 ************************/
-header
-{
-    width: 100%;
-    display: flex;
-    flex-direction:  column;
-}
-
 #banniere{
     display: flex;
     justify-content: center;
@@ -83,12 +65,12 @@ header
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        // border: 1px cornflowerblue solid;
+   
     }
     & p
     {
         color: gray;
-        // margin-bottom: 10px;
+ 
     }
     & .action
     {
@@ -301,44 +283,4 @@ main
    {
      opacity: 0;
    }
-}
-/************************
-FOOTER
-************************/
-footer
-{
-    width: 100%;
-    padding: 20px 0 20px 10px;
-    background-color: #353535;
-  
-}
-nav
-{
-    display: flex;
-    flex-direction: column;
-    & a, h3
-    {
-        color: #ffff;
-    }
-    & h3
-    {
-        margin-bottom: 15px;
-    }
-    & a 
-    {
-        line-height: 1.5em;
-    }
-    & i
-    {
-        font-size: 0.7em;
-    }
-    & .fa-solid
-    {
-        margin-right: 5px;
-       
-    }
-    & .fa-utensils
-    {
-        margin-right: 10px;
-    }
 }

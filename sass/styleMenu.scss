@@ -1,30 +1,16 @@
+
 @import "./utils/variables";
 @import "./utils/fonctions";
 @import "./utils/mixins";
 @import "./utils/extensions";
-@import "./misenpage/animations";
+@import "./base/fondations";
+@import "./misenpage/header";
+@import "./misenpage/footer";
+@import "./composants/animations";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a 
-{
-    text-decoration: none;
-    color: black;
-}
-p{
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-}
-/*h1
- {
-     font-size: 1.3em;
-}*/
 h2
 {
     font-size: 0.8em;
@@ -41,12 +27,7 @@ h3
 /************************
 HEADER
 ************************/
-header
-{
-    width: 100%;
-    display: flex;
-    flex-direction:  column;
-}
+
 #banniere{
     display: flex;
     justify-content: center;
@@ -336,3 +317,4 @@ nav
         margin-right: 10px;
     }
 }
+

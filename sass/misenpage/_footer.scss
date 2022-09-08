@@ -1,0 +1,39 @@
+/************************
+FOOTER
+************************/
+footer
+{
+    width: 100%;
+    padding: 20px 0 20px 10px;
+    background-color: #353535;
+}
+nav
+{
+    display: flex;
+    flex-direction: column;
+    & a, h3
+    {
+        color: #ffff;
+    }
+    & h3
+    {
+        margin-bottom: 15px;
+    }
+    & a 
+    {
+        line-height: 1.5em;
+    }
+    & i
+    {
+        font-size: 0.7em;
+    }
+    & .fa-solid
+    {
+        margin-right: 5px;
+       
+    }
+    & .fa-utensils
+    {
+        margin-right: 10px;
+    }
+}
