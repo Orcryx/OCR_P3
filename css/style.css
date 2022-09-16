@@ -136,10 +136,10 @@ nav .fa-utensils {
 /*faire apparaitre l'image colorer en dessous*/
 @-webkit-keyframes colorisation {
   0% {
-    opacity: 1;
     transform: scale(0.1);
   }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
@@ -470,4 +470,5 @@ main h2 {
 }
 .coeurs:hover > .fa-regular {
   opacity: 0;
+  transition: opacity 0.3s 0.4s ease-in;
 }/*# sourceMappingURL=style.css.map */

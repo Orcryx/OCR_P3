@@ -88,22 +88,24 @@
   /*faire apparaitre l'image colorer en dessous*/
   @-webkit-keyframes colorisation {
     0% {
-      opacity: 1;
+      
       transform: scale(0.1);
     }
     100% {
-   
+      opacity: 1;
       transform: scale(1);
     }
   }
   @keyframes colorisation {
     0% {
     
-     transform: scale(0.1) ;
+    transform: scale(0.1) ;
+  
     }
     100% {
       opacity: 1;
-      transform: scale(1);
+     transform: scale(1);
+  
     }
   }
 

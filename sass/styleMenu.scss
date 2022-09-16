@@ -124,9 +124,8 @@ MAIN
    }
    &:hover > .fa-regular
    {
-
        opacity: 0;
-           
+       transition: opacity 0.3s 0.4s ease-in;   
    }
 }
 #menu

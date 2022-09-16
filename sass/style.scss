@@ -272,7 +272,6 @@ main
     & .fa-regular
     {
         z-index: 2;
-
     }
    &:hover > .fa-solid
    {
@@ -282,5 +281,6 @@ main
    &:hover > .fa-regular
    {
      opacity: 0;
+     transition: opacity 0.3s 0.4s ease-in;
    }
 }
