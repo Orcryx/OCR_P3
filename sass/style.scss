@@ -46,7 +46,25 @@ HEADER
    height: 50px;
    padding-top: 15px;
    background-color: $fond1;
-   & .fa-location-dot {
+   & form 
+   {
+    margin-left: 60px;
+   }
+   & input
+   {
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 0.9em;  
+     &::placeholder
+     {
+        color : black;
+        font-weight: bold;
+     }
+   }
+   & .fa-location-dot 
+   {
     margin-right: 10px ; 
    } 
    &:hover
@@ -156,6 +174,10 @@ main
         top : 20px;
         color: black;
         font-weight: bold;
+        &:hover > .fa-icone
+        {
+          color: $primaire;
+        }
         & .numero
         {
            font-size: 0.7em;
@@ -181,6 +203,7 @@ main
         {
             color: #686666;
             font-size: 1em;
+        
         }
         & p {margin-top: 7px; font-size: 1em;}
     }

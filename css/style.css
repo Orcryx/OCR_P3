@@ -271,6 +271,20 @@ HEADER
   padding-top: 15px;
   background-color: #eaeaea;
 }
+#localisation form {
+  margin-left: 60px;
+}
+#localisation input {
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+#localisation input::placeholder {
+  color: black;
+  font-weight: bold;
+}
 #localisation .fa-location-dot {
   margin-right: 10px;
 }
@@ -369,6 +383,9 @@ main h2 {
   top: 20px;
   color: black;
   font-weight: bold;
+}
+.etape .alignement:hover > .fa-icone {
+  color: #9356DC;
 }
 .etape .alignement .numero {
   font-size: 0.7em;
