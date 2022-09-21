@@ -327,10 +327,12 @@ MAIN
   transition: opacity 0.3s 0.4s ease-in;
 }
 
+#menu {
+  background-color: #f6f6f6;
+}
 @media screen and (min-width: 1000px) {
   #menu {
     margin: 8% 15% 0 15%;
-    background-color: #f6f6f6;
     border-radius: 25px 25px 0 0;
     box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.2);
   }

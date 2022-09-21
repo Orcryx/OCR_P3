@@ -130,10 +130,10 @@ MAIN
 }
 #menu
 {
+    background-color: $fond2;
     @media screen and (min-width : 1000px)
     {
        margin: 8% 15% 0 15%;
-       background-color: $fond2;
        border-radius: 25px 25px 0 0;
        box-shadow: inset 1px 0 1px rgba(0, 0, 0,0.2), 1px 1px 1px rgba(0, 0, 0,0.2);
     }  
