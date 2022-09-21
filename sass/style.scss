@@ -232,6 +232,10 @@ main
     & .infoResto
     {
         margin: 5px 0 10px 0;
+        & p 
+        {
+            margin-top: 3px;
+        }
     }
     &:hover
     {
