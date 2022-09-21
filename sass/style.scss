@@ -57,6 +57,26 @@ HEADER
     background-color: transparent;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 0.9em;  
+     &::-webkit-input-placeholder
+     {
+        color : black;
+        font-weight: bold;
+     }  
+     &::-moz-placeholder
+     {
+        color : black;
+        font-weight: bold;
+     }  
+     &:-ms-input-placeholder
+     {
+        color : black;
+        font-weight: bold;
+     }  
+     &::-ms-input-placeholder
+     {
+        color : black;
+        font-weight: bold;
+     }  
      &::placeholder
      {
         color : black;
@@ -138,7 +158,8 @@ main
     {
         padding: 0 10px 0 10px;
         margin-bottom: 0;
-        @media screen and (min-width : 1000px){
+        @media screen and (min-width : 1000px)
+        {
             justify-content: space-around;
             flex-wrap: nowrap;
         }
@@ -311,3 +332,8 @@ main
      transition: opacity 0.3s 0.4s ease-in;
    }
 }
+
+
+/************************
+RESPONSIVE
+************************/

@@ -281,6 +281,22 @@ HEADER
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 0.9em;
 }
+#localisation input::-webkit-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+#localisation input::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+}
+#localisation input:-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+#localisation input::-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
 #localisation input::placeholder {
   color: black;
   font-weight: bold;
@@ -506,4 +522,8 @@ main h2 {
 .coeurs:hover > .fa-regular {
   opacity: 0;
   transition: opacity 0.3s 0.4s ease-in;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/************************
+RESPONSIVE
+************************//*# sourceMappingURL=style.css.map */
