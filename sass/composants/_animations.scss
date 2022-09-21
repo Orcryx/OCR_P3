@@ -38,6 +38,7 @@
     }
     to {
       width: 80px;
+      /*opacity: 1;*/
       visibility: visible;
     }
   }
@@ -138,8 +139,6 @@ LOADER
         display: inline-block;    
         border: 5px rgba(147, 86, 220,0.2) solid;
         border-left: 5px $secondaire solid;
-       /* border-image: linear-gradient(#200122,#6f0000);
-        border-image-slice: 1;*/
         -webkit-animation: rotation 800ms linear infinite;
                 animation: rotation 800ms linear infinite;
     }
