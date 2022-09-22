@@ -158,13 +158,7 @@ main
     &.type2
     {
         padding: 0 10px 0 10px;
-        margin-bottom: 0;
-        @media screen and (min-width : 1000px)
-        {
-            justify-content: space-around;
-            flex-wrap: nowrap;
-        }
-        
+        margin-bottom: 0;  
     }
 }
 
@@ -229,10 +223,6 @@ main
         }
         & p {margin-top: 7px; font-size: 1em;}
     }
-    @media screen and (min-width : 1000px){
-        max-width: 300px;
-
-    }
 }
 /* section restaurant*/
 #restaurants
@@ -257,10 +247,6 @@ main
         -o-object-fit: cover;
            object-fit: cover;
         border-radius: 15px 15px 0 0;
-   @media screen and (min-width : 1000px){
-       width: 100%;
-       height: 350px;
-     }
     }
     & .nouveau
     {
@@ -286,9 +272,6 @@ main
     {
         box-shadow: 3px 5px 8px rgba(0, 0, 0,0.2);   
     } 
-   @media screen and (min-width : 1000px){
-      max-width:350px ;
-   }
 }
 
 .inforCarteResto
@@ -338,3 +321,29 @@ main
 /************************
 RESPONSIVE
 ************************/
+
+@media screen and (min-width : 992px)
+{
+
+    .conteneur
+    {
+        &.type2{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    }
+    .etape
+    {
+        max-width: 280px;   
+    }
+    .carte
+    {
+        & img
+        {
+            width: 100%;
+            height: 350px;
+            min-height: 250px;
+        }
+        max-width: 400px;
+    }
+}

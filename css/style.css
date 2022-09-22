@@ -367,12 +367,6 @@ main h2 {
   padding: 0 10px 0 10px;
   margin-bottom: 0;
 }
-@media screen and (min-width: 1000px) {
-  .conteneur.type2 {
-    justify-content: space-around;
-    flex-wrap: nowrap;
-  }
-}
 
 .etape {
   width: 100%;
@@ -428,11 +422,6 @@ main h2 {
   margin-top: 7px;
   font-size: 1em;
 }
-@media screen and (min-width: 1000px) {
-  .etape {
-    max-width: 300px;
-  }
-}
 
 /* section restaurant*/
 #restaurants {
@@ -457,12 +446,6 @@ main h2 {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-@media screen and (min-width: 1000px) {
-  .carte img {
-    width: 100%;
-    height: 350px;
-  }
-}
 .carte .nouveau {
   color: #278870;
   font-size: 0.8em;
@@ -482,11 +465,6 @@ main h2 {
 }
 .carte:hover {
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
-}
-@media screen and (min-width: 1000px) {
-  .carte {
-    max-width: 350px;
-  }
 }
 
 .inforCarteResto {
@@ -528,4 +506,21 @@ main h2 {
 
 /************************
 RESPONSIVE
-************************//*# sourceMappingURL=style.css.map */
+************************/
+@media screen and (min-width: 992px) {
+  .conteneur.type2 {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  .etape {
+    max-width: 280px;
+  }
+  .carte {
+    max-width: 400px;
+  }
+  .carte img {
+    width: 100%;
+    height: 350px;
+    min-height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
