@@ -247,6 +247,17 @@ h2 {
   margin-bottom: 5px;
   margin-top: 5px;
   color: #353535;
+  position: relative;
+  margin-bottom: 25px;
+}
+h2::after {
+  content: " ";
+  background-color: #99E2D0;
+  height: 2px;
+  width: 34px;
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
 }
 
 h3 {
@@ -368,12 +379,13 @@ MAIN
   flex-wrap: wrap;
   flex-direction: column;
   padding: 20px 10px 10px 10px;
-}
-#carteMenu .sousligne {
-  background-color: #99E2D0;
-  height: 2px;
-  width: 34px;
-  margin-bottom: 25px;
+  /* .sousligne
+   {
+       background-color: $tertiaire;
+       height: 2px;
+       width: 34px;
+       margin-bottom: 25px;
+   }*/
 }
 
 .moment {
@@ -409,6 +421,9 @@ MAIN
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.nourriture .description .details {
+  font-weight: 100;
 }
 .nourriture .prix {
   font-size: 0.9em;

@@ -23,6 +23,19 @@ h2
     margin-bottom: 5px;
     margin-top: 5px;
     color: #353535;
+    position :relative;
+    margin-bottom: 25px;
+    &::after
+    {
+        content: " ";
+        background-color: $tertiaire;
+        height: 2px;
+        width: 34px;
+        position : absolute;
+        bottom : -8px;
+        left: 0px;
+  
+    }
 }
 h3
 {
@@ -156,13 +169,13 @@ MAIN
     flex-direction: column;
     padding: 20px 10px 10px 10px;
     //border:  1px pink solid;
-    .sousligne
+   /* .sousligne
     {
         background-color: $tertiaire;
         height: 2px;
         width: 34px;
         margin-bottom: 25px;
-    }
+    }*/
  }
 .moment 
 {
@@ -198,9 +211,13 @@ MAIN
         & h3, p
         {
            white-space: nowrap; 
-            overflow: hidden;
+                overflow: hidden;
             text-overflow: ellipsis;
          
+        }
+        & .details
+        {
+            font-weight: 100;
         }
     }
     & .prix
