@@ -80,10 +80,6 @@ MAIN
         height: 200px;
         -o-object-fit: cover;
            object-fit: cover;
-        @media screen and (min-width : 1000px)
-        {
-            height: 300px;
-        }
     } 
     & #blocNomRestaurant
     {
@@ -97,15 +93,6 @@ MAIN
         display: flex;
         justify-content: center;
         gap: 30px;
-        @media screen and (min-width : 1000px)
-        {
-            width: 30%;
-            bottom: -30px;
-            margin-left: 35%;
-            padding: 20px;
-            border-radius: 50px;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0,0.2);
-        }
     }
 }
 
@@ -149,12 +136,7 @@ MAIN
 #menu
 {
     background-color: $fond2;
-    @media screen and (min-width : 1000px)
-    {
-       margin: 8% 15% 0 15%;
-       border-radius: 25px 25px 0 0;
-       box-shadow: inset 1px 0 1px rgba(0, 0, 0,0.2), 1px 1px 1px rgba(0, 0, 0,0.2);
-    }  
+
   & #bouton
   {
     display: flex;
@@ -168,14 +150,6 @@ MAIN
     flex-wrap: wrap;
     flex-direction: column;
     padding: 20px 10px 10px 10px;
-    //border:  1px pink solid;
-   /* .sousligne
-    {
-        background-color: $tertiaire;
-        height: 2px;
-        width: 34px;
-        margin-bottom: 25px;
-    }*/
  }
 .moment 
 {
@@ -271,12 +245,7 @@ MAIN
     {
         box-shadow: 1px 2px 4px rgba(0, 0, 0,0.2);
     }
-    @media screen and (min-width : 1000px){
-        max-width: 80%;
-    }
-
 }
- 
 
 .action
     {
@@ -305,3 +274,41 @@ MAIN
 /************************
 RESPONSIVE
 ************************/
+
+@media screen and (min-width : 992px)
+{
+    #photoTable 
+    {
+        & img
+        {
+            height: 300px; 
+        }
+        & #blocNomRestaurant
+        {
+            width: 30%;
+            bottom: -30px;
+            margin-left: 35%;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0,0.2);  
+        } 
+    }
+    
+    h1
+    {
+        font-size: 1.6em;
+    }
+
+    #menu
+    {
+        margin: 8% 15% 0 15%;
+        border-radius: 25px 25px 0 0;
+        box-shadow: inset 1px 0 1px rgba(0, 0, 0,0.2), 1px 1px 1px rgba(0, 0, 0,0.2);
+    }
+
+    .nourriture
+    {
+        max-width: 80%;
+    }
+
+}
